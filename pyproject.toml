@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quinnicho-inferobs_jd437"
+version = "0.1.0"
+description = "从样本里推断模型服务可观测性工程师·KV Cache 复用与前缀共享应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "quinnicho" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://quinnicho.github.io"
+Repository = "https://github.com/quinnicho/inferobs_jd437"
+Issues = "https://github.com/quinnicho/inferobs_jd437/issues"
+
+[project.scripts]
+inferobs_jd437 = "inferobs_jd437:main"
+
+[tool.setuptools]
+py-modules = ["inferobs_jd437"]
